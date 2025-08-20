@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show()
+        {
+            inp=document.getElementById("inp")
+            if(inp.type=="password")
+                inp.type="text"
+            else    
+                inp.type="password"
+        }
+
+
+
+
+
+         function hide()
+        {
+            inp=document.getElementById("inp")
+
+            inp.type="password"
+        }
+    </script>
+</head>
+<body>
+    
+    <input type="password" id="inp"><button onclick="show()">i</button>
+<button onclick="hide()">i</button>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function colordiv()
+        {
+            console.log("in colordiv")
+            choice=document.getElementById("clr").value
+            size=document.getElementById("num").value
+            console.log("in colordiv"+choice+" "+size)
+            value=size+"px "+ "solid "+choice
+            console.log(value)
+            document.getElementById("container").style.border=value;
+        }
+         
+
+        function printTable() {
+            no = parseInt(document.getElementById("inp1").value)
+          
+            spanstr=""
+            for(k=1;k<=no;k++)
+        {
+            spanstr=spanstr+`<span id="result${k}">${k}th table</span>`
+        }
+        document.getElementById("container").innerHTML=spanstr
+            for (j = 1; j <= no; j++) {
+                res = 1
+                str = "<table border='1'>"
+                for (i = 1; i <= 10; i++) {
+                    res = j * i
+                    str = str + `<tr> <td>${j}</td> <td>*</td> <td>${i}</td> 
+                    <td>=</td><td>${res}</td></tr>`
+
+                }
+                str = str + "</table>"
+                console.log(str)
+                document.getElementById("result"+j).innerHTML = str
+
+            }
+           
+        }
+    </script>
+    <style>
+        #container
+        {
+            display: flex;
+            gap:25px;
+            border:2px solid black
+        }
+        #clr
+         {  
+             border: 1px solid #000;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="inp1">
+    <br><br>
+    <button onclick="printTable()">PrintTable</button>
+    <br><br>
+    <div id="container">
+    <!-- <span id="result1">Pehla table</span>
+    <span id="result2">Dusra table</span>
+    <span id="result3">Tisra table</span>
+    <span id="result4">Chautha table</span>
+    <span id="result5">Pachva table</span> -->
+    </div>
+
+    <input type="color" id="clr">
+    <input type="text" id="num">
+    <button onclick="colordiv()">ColorRed</button>
+
+     
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+
+
+.dots3 svg{
+    height: 30px;
+    width: 30px;
+}
+
+.mainpost
+{
+    width: 300px;
+    border: 1px solid lightgrey;
+    margin:100px auto;
+    border-radius: 5px;
+    padding:10px
+    
+  
+}
+.middle img{
+    width: 100%;
+}
+.userdp img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+.dpnmloc
+{
+    display: flex;
+    gap:10px
+}
+.header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* div{
+    border: 1px solid green;
+} */
+.nameloc
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subfooter
+{
+    display: flex;
+    justify-content: space-between;
+}
+svg
+{
+    height: 30px;
+    width: 30px;
+    stroke:black;
+    fill:transparent;
+    stroke-width:40;
+}
+

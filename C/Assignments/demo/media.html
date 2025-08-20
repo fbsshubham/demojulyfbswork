@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+           
+            height: 400px;
+            border: 2px solid red;
+        }
+        .logo img{
+            width: 200px;
+            border-radius: 50%;
+        }
+        .container
+        {
+            /* width: 700px; */
+            display: flex;
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+           
+        }
+
+        @media  screen and (max-width:800px) {
+             .container
+        {
+            /* width: 700px; */
+            display: flex;
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+           
+        }
+         .logo img{
+            width: 200px;
+            border-radius: 10%;
+            border: 2px solid red;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="form">
+             <form action="/dummy" method="post">
+
+        This is some &lt;html&gt; text
+
+        <br>
+       
+      
+     
+        <input type="text" name="uname" id="uname" placeholder="Enter username">
+        <br><br>
+        Password <input type="password" name="pass">
+        <br><br>
+        Mobno <input type="number" name="mobno">
+        <br><br>
+        Gender <input type="radio" name="gender" value="m">Male
+        <input type="radio" name="gender" value="f">Female
+        <input type="radio" name="gender" value="oth">Others
+
+        <br><br>
+        Subjects: <input type="checkbox" name="math">Maths
+        <input type="checkbox" name="phy">Physics
+        <input type="checkbox" name="chem">Chemistry
+        <input type="checkbox" name="bio">Biology
+
+
+
+        <br>
+        State
+        <!-- <select name="state">
+            <option value="mh">Maharashtra</option>
+            <option>Karnataka</option>
+            <option>Jammu And Kashmir</option>
+            <option>Punjab</option>
+            <option>Rajastan</option>
+
+        </select> -->
+
+        <datalist id="statelist">
+             <option value="mh">Maharashtra</option>
+            <option>Karnataka</option>
+            <option>Jammu And Kashmir</option>
+            <option>Punjab</option>
+            <option>Rajastan</option>
+        </datalist>
+      
+        <input type="submit" value="Click here">
+
+
+    </form>
+        </div>
+        <div class="logo">
+            <img src="
+https://i.postimg.cc/dtfQ2cTP/FBS-white-bg.jpg
+" alt="">
+        </div>
+    </div>
+</body>
+</html>

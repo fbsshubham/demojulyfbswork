@@ -1,0 +1,42 @@
+
+        *
+        {
+            margin: 0px;
+        }
+        .box
+        {
+            width: 500px;
+            border:1px solid lightgray;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .box .uname
+        {
+            text-align: center;
+        }
+        .box .dpimg 
+        {
+            height: 50px;
+            width: 50px;
+            margin:auto;
+            border-radius: 50%;
+            border:2px solid black;
+            overflow: hidden;
+        }
+        .box hr{
+            border-color:red;
+        }
+        .box .dpimg img{
+            width: 100%;
+            height: 100%;
+           
+            /* box-shadow: 10px 20px 5px red; */
+            /* border: 2px solid grey; */
+            object-fit: cover;
+            
+        }
+        .box .postimg
+        {
+            width: 100%;
+        }

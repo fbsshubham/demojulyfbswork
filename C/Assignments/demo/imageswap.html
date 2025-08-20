@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function () {
+
+
+
+
+
+
+            $("img").click(function () {
+
+                url = $(this).attr("src")
+                console.log(url)
+                temp = $("#dest").attr("src")
+                $("#dest").attr("src", url)
+                $(this).attr("src", temp)
+
+            })
+
+
+
+
+
+
+        })
+    </script>
+</head>
+
+<body>
+
+    <div>
+        <img src="/Images/MSD.JPG" alt="" width="500px" id="dest">
+    </div>
+    <div>
+        <img src="/Images/Kohli.JPG" width="300px" alt="" class="items">
+        <img src="/Images/Raina.jpg" width="300px" alt="" class="items">
+
+        <img src="/Images/7-8.jpg" width="300px" alt="" class="items">
+
+        <img src="/Images/Moment.jpg" width="300px" alt="" class="items">
+
+    </div>
+
+</body>
+
+</html>
