@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function filternames(arr1, arr2) {
+            resarr = []
+            k = 0;
+
+            for (i = 0; i < arr2.length; i++) {
+                flag = 0;
+                for (j = 0; j < arr1.length; j++) {
+                    if (arr2[i] == arr1[j]) {
+                        flag = 1;
+                        break;
+                    }
+                }
+                if(flag==0)
+                    resarr[k++]=arr2[i]
+            }
+                return resarr
+        }
+        function filterdata() {
+            array1 = document.getElementById("inp1").value
+
+            finalarr1 = array1.split(',').map(ele => ele.trim())
+
+            array2 = document.getElementById("inp2").value
+
+            finalarr2 = array2.split(',').map(ele => ele.trim())
+
+
+            res = filternames(finalarr1, finalarr2)
+
+            document.getElementById("res").innerHTML = res
+        }
+    </script>
+    <style>
+        #container
+        {
+            display: flex;
+            gap:20px
+        }
+        textarea{
+            height:600px
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+    <div>
+    Followers <br>
+    <textarea name="" id="inp1"></textarea>
+    <br>
+</div>
+<div>
+    Following <br>
+     <textarea name="" id="inp2"></textarea>
+    <br>
+</div>
+<div>
+    Result <br>
+     <textarea name="" id="res">
+
+     </textarea>
+</div>
+</div>
+    <button onclick="filterdata()">Filter</button>
+    
+</body>
+
+</html>
